@@ -105,7 +105,7 @@ h2 {
     color: #7A8F85;
 }
 
-.change-option {
+.menu-box > a {
     font-size: 13px;
     font-weight: 700;
     color: #467A66;
