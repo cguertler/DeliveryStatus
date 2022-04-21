@@ -65,7 +65,7 @@ h2 {
 
 .body-text {
     text-align: center;
-    margin: 10px 35px 0 35px;
+    /* margin: 10px 35px 0 35px; */
     font-family: ubuntu;
     font-weight: 400;
     color: #828282;
@@ -115,6 +115,22 @@ h2 {
     color: #467A66;
     background-color: #F0FFF5;
     border-radius: 0 5px 5px 0;
+}
+
+.ready {
+    height: 50px;
+    width: 259px;
+    background-color: #46A67E;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 10% 0 10%;
+    box-shadow: 0px 20px 20px rgba(103, 189, 153, 0.2);
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 15px;
+
 }
 
 
