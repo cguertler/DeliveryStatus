@@ -131,7 +131,13 @@ h2 {
     font-weight: bold;
     color: #FFFFFF;
     font-size: 15px;
+    transition-duration: .3s;
+}
 
+.ready:hover {
+    background-color: #54c294;
+    cursor: pointer;
+    transition-duration: .3s;
 }
 
 
