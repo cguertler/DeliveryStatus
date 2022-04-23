@@ -140,6 +140,27 @@ h2 {
     transition-duration: .3s;
 }
 
+.elipsis-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 15%;
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    width: 7.3px;
+    height: 7px;
+}
+
+.active-dot {
+    background-color: #67BD99;
+}
+
 
 
 /* Extra small devices (phones, 600px and down) */
