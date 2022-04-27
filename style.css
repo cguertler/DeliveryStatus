@@ -22,8 +22,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    font-family: Montserrat;   
-    
+    font-family: Montserrat;      
 }
 
 .outermost-container {
@@ -41,11 +40,13 @@ html, body {
     background-color: #ffffff;
     position: relative;
     box-shadow: 0px 40px 40px -20px #3C7B61;
-    /* display:flex;
-    flex-direction: column;
-    justify-content: space-around; */
 
 }
+
+.choose-dish-panel, .order-process-begins-panel{
+    display: none;
+}
+
 
 .close-icon {
     position: absolute;
@@ -61,6 +62,7 @@ html, body {
 }
 
 .text-panel {
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -71,18 +73,11 @@ h2 {
     font-weight: 600;
     color: #2F463D;
     text-align: center;
-    /* margin-top: 20px; */
-    /* margin-bottom: 15px; */
     font: 'Montserrat';
-}
-
-p {
-    display: inline-block;
 }
 
 .body-text {
     text-align: center;
-    /* margin: 10px 35px 0 35px; */
     font-family: ubuntu;
     font-weight: 400;
     color: #828282;
@@ -94,7 +89,6 @@ p {
     display: flex;
     align-items: center;
     height: 67px;
-    /* margin-top: 15px; */
     margin-left: 10%;
     margin-right: 10%;
     background-color: #F0FFF5;
@@ -134,25 +128,31 @@ p {
 .button {
     height: 50px;
     width: 259px;
-    background-color: #46A67E;
+    background-color: #BDBDBD;    
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 30px 10% 25% 10%; */
     margin: 0 10% 0 10%;
-    box-shadow: 0px 20px 20px rgba(103, 189, 153, 0.2);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     font-weight: bold;
     color: #FFFFFF;
     font-size: 15px;
     transition-duration: .3s;
+
+    box-shadow: 0px 20px 20px 0px #A7A7A733;
+
 }
 
+.active-button {
+    background-color: #46A67E;
+    box-shadow: 0px 20px 20px rgba(103, 189, 153, 0.2);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));    
+}
+ 
 .arrow {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-}
+} 
 
 .ready:hover {
     background-color: #54c294;
@@ -199,7 +199,11 @@ p {
 @media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .choose-dish-panel, .order-process-begins-panel{
+        display: unset;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
