@@ -125,6 +125,10 @@ h2 {
     border-radius: 0 5px 5px 0;
 }
 
+.menu-box > a:hover {
+    cursor: pointer;
+}
+
 .button {
     height: 50px;
     width: 259px;
@@ -138,9 +142,23 @@ h2 {
     color: #FFFFFF;
     font-size: 15px;
     transition-duration: .3s;
-
     box-shadow: 0px 20px 20px 0px #A7A7A733;
+}
 
+.active-on-hover {
+    display: none;
+}
+
+.active-button:hover {
+    cursor: pointer;
+}
+
+.active-button:hover > .active-on-hover {
+    display: unset;
+}
+
+.active-button:hover > .inactive-on-hover {
+    display: none;
 }
 
 .active-button {
